@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesign Extraction Installation Banner</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0891b2',
+                        secondary: '#f97316'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <!-- Top Bar -->
+        <div class="bg-gray-100 py-2">
+            <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-phone-line text-primary"></i>
+                        </div>
+                        <span class="text-primary font-medium">+31 (0) 85-0606072</span>
+                        <span class="text-gray-600">ma - vr 08:30 - 17:00</span>
+                        <span class="text-gray-600">verkoop & advies</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <button class="flex items-center space-x-2 text-primary">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <span>Stuur een email</span>
+                    </button>
+                    <button class="flex items-center space-x-2 text-gray-700">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <span>Inloggen</span>
+                    </button>
+                    <span class="text-gray-700">Klantenservice</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="py-4">
+            <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+                <div class="flex items-center">
+                    <h1 class="font-['Pacifico'] text-2xl text-primary mr-2">Horeca</h1>
+                    <h1 class="font-['Pacifico'] text-2xl text-secondary">Gemak</h1>
+                    <p class="text-sm text-gray-600 ml-2 italic">Alles onder één dak</p>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="relative flex-1 max-w-md">
+                        <input type="text" placeholder="Zoeken..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        <div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+                            <i class="ri-search-line text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-700">0 -</span>
+                        <button class="relative">
+                            <div class="w-8 h-8 flex items-center justify-center">
+                                <i class="ri-shopping-cart-line text-gray-700 text-xl"></i>
+                            </div>
+                            <span class="absolute -top-2 -right-2 bg-secondary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                        </button>
+                    </div>
+                    <button class="bg-secondary text-white px-6 py-2 rounded-button !rounded-button whitespace-nowrap">BESTELLEN</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="bg-primary">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Keukenapparatuur</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Koelen & Vriezen</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Klein Materiaal</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Warmhouden</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Hygiëne & Vaatwassers</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Presentatie</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80 bg-primary/20">Afzuiging</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">RVS</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Meubilair</a>
+                    <a href="#" class="text-white py-4 px-2 hover:bg-primary/80">Overig</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Benefits Bar -->
+        <div class="bg-orange-50 py-3">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex items-center justify-between text-sm">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-truck-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-700">Gratis verzending v.a €150</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-shield-check-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-700">Ook achteraf betalen</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-time-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-700">Same day delivery mogelijk!</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-price-tag-3-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-700">Altijd de laagste prijs</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                            <i class="ri-shopping-bag-line text-secondary"></i>
+                        </div>
+                        <span class="text-gray-700">100.000+ producten</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center space-x-2 text-sm text-gray-600 mb-6">
+            <div class="w-4 h-4 flex items-center justify-center">
+                <i class="ri-arrow-left-line"></i>
+            </div>
+            <a href="#" class="hover:text-primary">Home</a>
+            <span>Afzuiging</span>
+        </nav>
+
+        <!-- Installation Banner -->
+        <div class="bg-gradient-to-r from-blue-50 to-orange-50 rounded-xl p-8 mb-8 border border-gray-200">
+            <div class="flex items-center justify-between">
+                <!-- Left: Technician Image -->
+                <div class="flex-shrink-0">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20technician%20in%20modern%20work%20uniform%20installing%20commercial%20kitchen%20ventilation%20system%2C%20trustworthy%20appearance%2C%20serious%20expression%2C%20wearing%20safety%20equipment%2C%20clean%20industrial%20background%2C%20professional%20lighting%2C%20high%20quality%20portrait%20photography&width=200&height=250&seq=tech001&orientation=portrait"
+                        alt="Professionele Technicus" class="w-48 h-60 object-cover object-top rounded-lg">
+                </div>
+
+                <!-- Center: Content -->
+                <div class="flex-1 mx-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Installatie Professionele Afzuiging</h2>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center mt-1">
+                                <i class="ri-check-double-line text-primary text-lg"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">Specialistische installatie, direct goed geregeld!</span>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center mt-1">
+                                <i class="ri-shield-check-line text-primary text-lg"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">100% volgens wetgeving en normeringen!</span>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center mt-1">
+                                <i class="ri-time-line text-primary text-lg"></i>
+                            </div>
+                            <span class="text-gray-700 text-lg">Binnen 4 uur een offerte? Stuur ons een filmpje van de situatie!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Product Images and QR -->
+                <div class="flex-shrink-0">
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20commercial%20kitchen%20extraction%20hood%20stainless%20steel%20professional%20ventilation%20system%20clean%20white%20background%20product%20photography%20high%20quality&width=120&height=120&seq=hood001&orientation=squarish"
+                            alt="Afzuigkap" class="w-24 h-24 object-cover object-top rounded-lg">
+                        <img src="https://readdy.ai/api/search-image?query=industrial%20kitchen%20ventilation%20system%20wall%20mounted%20extraction%20hood%20stainless%20steel%20professional%20equipment%20clean%20background&width=120&height=120&seq=hood002&orientation=squarish"
+                            alt="Afzuigkap" class="w-24 h-24 object-cover object-top rounded-lg">
+                        <img src="https://readdy.ai/api/search-image?query=commercial%20kitchen%20island%20extraction%20hood%20suspended%20ventilation%20system%20stainless%20steel%20professional%20grade%20clean%20background&width=120&height=120&seq=hood003&orientation=squarish"
+                            alt="Afzuigkap" class="w-24 h-24 object-cover object-top rounded-lg">
+                        <img src="https://readdy.ai/api/search-image?query=compact%20commercial%20extraction%20hood%20for%20small%20kitchen%20stainless%20steel%20ventilation%20equipment%20professional%20quality%20clean%20background&width=120&height=120&seq=hood004&orientation=squarish"
+                            alt="Afzuigkap" class="w-24 h-24 object-cover object-top rounded-lg">
+                    </div>
+
+                    <!-- QR Code Section -->
+                    <div class="text-center bg-white p-4 rounded-lg shadow-sm">
+                        <div class="w-20 h-20 bg-gray-800 mx-auto mb-2 rounded flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white rounded grid grid-cols-8 gap-px p-1">
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                                <div class="bg-white"></div>
+                                <div class="bg-gray-800 rounded-sm"></div>
+                            </div>
+                        </div>
+                        <p class="text-sm font-medium text-gray-700">Stuur je filmpje via WhatsApp!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="flex gap-8">
+            <!-- Sidebar -->
+            <aside class="w-64 flex-shrink-0">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="font-semibold text-gray-800 mb-4">Categorieën</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block text-gray-700 hover:text-primary">Keukenapparatuur</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Koelen & Vriezen</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Klein Materiaal</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Warmhouden</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Hygiëne & Vaatwassers</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Presentatie</a>
+                        <div class="ml-4 space-y-2">
+                            <a href="#" class="block text-primary font-medium">Afzuiging</a>
+                            <div class="ml-4 space-y-1 text-sm">
+                                <a href="#" class="block text-gray-600 hover:text-primary">Afzuigkappen Horeca</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Condenskappen</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Afzuigmotoren</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Buizen en hulpstukken</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Gasgebrekkleppen</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Geurfilterkasten</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Magneetkleppen</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Roosters</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Standenregelaars</a>
+                                <a href="#" class="block text-gray-600 hover:text-primary">Verlichting voor afzuigkap</a>
+                            </div>
+                        </div>
+                        <a href="#" class="block text-gray-700 hover:text-primary">RVS</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Meubilair</a>
+                        <a href="#" class="block text-gray-700 hover:text-primary">Overig</a>
+                    </nav>
+
+                    <div class="mt-8">
+                        <h3 class="font-semibold text-primary mb-4">Recent bekeken</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://readdy.ai/api/search-image?query=complete%20kassasysteem%20FALCON%20touchscreen%20POS%20system%20modern%20retail%20equipment%20clean%20white%20background&width=60&height=60&seq=recent001&orientation=squarish" alt="Kassasysteem" class="w-12 h-12 object-cover object-top rounded">
+                                <div class="flex-1">
+                                    <p class="text-xs text-gray-600">Complete Kassasysteem | FALCON 1 | Touchscreen | 10.1/24" Displays | Bonprinter 80mm | Incl. Kassalade + Softwarelicentie (FactoryPOS BASIS à € 49/mnd) | 335x335x225(h)mm</p>
+                                    <div class="flex items-center space-x-2 mt-1">
+                                        <span class="text-xs text-gray-400 line-through">195,-</span>
+                                        <span class="text-sm font-medium text-primary">159,-</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <img src="https://readdy.ai/api/search-image?query=muntelmachine%20SERIE%20270%20commercial%20coin%20counting%20machine%20professional%20office%20equipment%20clean%20background&width=60&height=60&seq=recent002&orientation=squarish" alt="Muntelmachine"
+                                    class="w-12 h-12 object-cover object-top rounded">
+                                <div class="flex-1">
+                                    <p class="text-xs text-gray-600">Muntelmachine | SERIE 270 | 250/min | Invoer 400 / Opvang 200 Munten |</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="flex-1">
+                <h1 class="text-3xl font-bold text-gray-800 mb-8">Afzuiging</h1>
+
+                <!-- Product Categories Grid -->
+                <div class="grid grid-cols-5 gap-6">
+                    <!-- Afzuigkappen Horeca -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=commercial%20kitchen%20extraction%20hood%20stainless%20steel%20wall%20mounted%20professional%20ventilation%20system%20modern%20design%20clean%20white%20background%20product%20photography&width=200&height=150&seq=cat001&orientation=landscape"
+                            alt="Afzuigkappen Horeca" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Afzuigkappen Horeca</h3>
+                        <p class="text-sm text-gray-600">371 producten</p>
+                    </div>
+
+                    <!-- Condenskappen -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=commercial%20condensation%20hood%20stainless%20steel%20kitchen%20ventilation%20equipment%20professional%20grade%20clean%20background%20industrial%20design&width=200&height=150&seq=cat002&orientation=landscape"
+                            alt="Condenskappen" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Condenskappen</h3>
+                        <p class="text-sm text-gray-600">7 producten</p>
+                    </div>
+
+                    <!-- Afzuigmotoren -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=commercial%20extraction%20motor%20ventilation%20fan%20industrial%20kitchen%20equipment%20stainless%20steel%20housing%20professional%20grade%20clean%20background&width=200&height=150&seq=cat003&orientation=landscape"
+                            alt="Afzuigmotoren" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Afzuigmotoren</h3>
+                        <p class="text-sm text-gray-600">106 producten</p>
+                    </div>
+
+                    <!-- Buizen en hulpstukken -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=stainless%20steel%20ventilation%20ducts%20and%20fittings%20commercial%20kitchen%20pipe%20connectors%20professional%20HVAC%20components%20clean%20background&width=200&height=150&seq=cat004&orientation=landscape"
+                            alt="Buizen en hulpstukken" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Buizen en hulpstukken</h3>
+                        <p class="text-sm text-gray-600">66 producten</p>
+                    </div>
+
+                    <!-- Gasgebrekkleppen -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=gas%20safety%20valve%20commercial%20kitchen%20equipment%20stainless%20steel%20gas%20control%20valve%20professional%20grade%20clean%20background%20industrial%20component&width=200&height=150&seq=cat005&orientation=landscape"
+                            alt="Gasgebrekkleppen" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Gasgebrekkleppen</h3>
+                        <p class="text-sm text-gray-600">3 producten</p>
+                    </div>
+
+                    <!-- Geurfilterkasten -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=commercial%20odor%20filter%20box%20stainless%20steel%20air%20filtration%20system%20professional%20kitchen%20equipment%20clean%20background%20industrial%20design&width=200&height=150&seq=cat006&orientation=landscape"
+                            alt="Geurfilterkasten" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Geurfilterkasten</h3>
+                        <p class="text-sm text-gray-600">56 producten</p>
+                    </div>
+
+                    <!-- Magneetkleppen -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=magnetic%20valve%20solenoid%20valve%20commercial%20kitchen%20equipment%20stainless%20steel%20gas%20control%20professional%20grade%20clean%20background&width=200&height=150&seq=cat007&orientation=landscape"
+                            alt="Magneetkleppen" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Magneetkleppen</h3>
+                        <p class="text-sm text-gray-600">5 producten</p>
+                    </div>
+
+                    <!-- Roosters -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=stainless%20steel%20ventilation%20grilles%20commercial%20kitchen%20air%20grids%20professional%20HVAC%20components%20clean%20background%20industrial%20design&width=200&height=150&seq=cat008&orientation=landscape"
+                            alt="Roosters" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Roosters</h3>
+                        <p class="text-sm text-gray-600">14 producten</p>
+                    </div>
+
+                    <!-- Standenregelaars -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=commercial%20ventilation%20speed%20controller%20stainless%20steel%20control%20panel%20professional%20kitchen%20equipment%20clean%20background%20modern%20design&width=200&height=150&seq=cat009&orientation=landscape"
+                            alt="Standenregelaars" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Standenregelaars</h3>
+                        <p class="text-sm text-gray-600">35 producten</p>
+                    </div>
+
+                    <!-- Verlichting voor afzuigkap -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=LED%20lighting%20for%20commercial%20kitchen%20extraction%20hood%20stainless%20steel%20light%20fixture%20professional%20kitchen%20equipment%20clean%20background&width=200&height=150&seq=cat010&orientation=landscape"
+                            alt="Verlichting voor afzuigkap" class="w-full h-32 object-cover object-top rounded-lg mb-4">
+                        <h3 class="font-semibold text-primary mb-2">Verlichting voor afzuigkap</h3>
+                        <p class="text-sm text-gray-600">3 producten</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Over HorecaGemak</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white">Over ons</a></li>
+                        <li><a href="#" class="hover:text-white">Vestigingen</a></li>
+                        <li><a href="#" class="hover:text-white">Werken bij</a></li>
+                        <li><a href="#" class="hover:text-white">Duurzaamheid</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Klantenservice</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Veelgestelde vragen</a></li>
+                        <li><a href="#" class="hover:text-white">Retourneren</a></li>
+                        <li><a href="#" class="hover:text-white">Garantie</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Mijn account</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white">Inloggen</a></li>
+                        <li><a href="#" class="hover:text-white">Registreren</a></li>
+                        <li><a href="#" class="hover:text-white">Bestellingen</a></li>
+                        <li><a href="#" class="hover:text-white">Verlanglijst</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Betalen & Verzenden</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-visa-fill text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-mastercard-fill text-red-500 text-xl"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-paypal-fill text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-bank-card-fill text-gray-400 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 HorecaGemak. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="search-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('input[type="text"]');
+
+            searchInput.addEventListener('focus', function() {
+                this.classList.add('ring-2', 'ring-primary');
+            });
+
+            searchInput.addEventListener('blur', function() {
+                this.classList.remove('ring-2', 'ring-primary');
+            });
+        });
+    </script>
+
+    <script id="category-hover-effects">
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryCards = document.querySelectorAll('.grid > div');
+
+            categoryCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('transform', 'scale-105');
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('transform', 'scale-105');
+                });
+            });
+        });
+    </script>
+
+    <script id="navigation-interactions">
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    navLinks.forEach(l => l.classList.remove('bg-primary/20'));
+                    this.classList.add('bg-primary/20');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
